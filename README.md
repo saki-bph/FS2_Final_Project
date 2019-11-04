@@ -5,4 +5,6 @@
    Create team presents a form that allows one to create a pokemon team of 6 members, topped off with a team name.
    These team names are then viewable in the all teams link
 ## Made with node.js, expressjs and bootstrap
+   upon downloading run with npm start, server will be hosted on localhost:3000
    simulated log-in is use the credentials georgeBrown for username and fullstack2 for password
+   
