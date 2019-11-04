@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+  each val, index in all_pokemon
+    li
+      a(href = pic_url+(index+1)+".png") #{val.name}
+
+  else
+    li There are no teams.

@@ -1,0 +1,35 @@
+extends layout
+
+block content
+
+  h1 #{title}
+
+  form(method='POST' action='')
+    div.form-group
+      label(for='name') Team Name:
+      input#name.form-control(type='text', placeholder='Fantasy, Poetry etc.' name='name' required='true' value=(undefined===genre ? '' : genre.name) )
+    div.form-group
+      label(for='roster_one') Roster 1:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+    div.form-group
+      label(for='roster_two') Roster 2:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+    div.form-group
+      label(for='roster_three') Roster 3:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+    div.form-group
+      label(for='roster_four') Roster 4:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+    div.form-group
+      label(for='roster_five') Roster 5:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+    div.form-group
+      label(for='roster_six') Roster 6:
+      input#name.form-control(type='text', placeholder='Enter a pokemon name' name='roster' required='true' value=(undefined===genre ? '' : genre.roster) )
+
+    button.btn.btn-primary(type='submit') Submit
+
+  if errors
+    ul
+      for error in errors
+        li!= error.msg
