@@ -19,7 +19,7 @@
     "firebase": "^7.2.3",
     "helmet": "^3.15.1",
     "http-errors": "~1.6.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "^5.4.13",
     "morgan": "~1.9.0",
     "pokedex-promise-v2": "^3.2.0",
